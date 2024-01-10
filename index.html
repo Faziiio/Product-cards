@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product</title>
+</head>
+
+<body>
+    <div id="page-1">
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617859047452-8510bcf207fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzb3J0c3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" />
+                <div class="price">
+                    <p>$30,000</p>
+                </div>
+                <h4>Skyline Oasis</h4>
+                <p class="first-para">237 South Punjab,Pakistan</p>
+                <p class="second-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+                    autem illum animi vitae, fugit culpa.We are making Pakisan
+                </p>
+                <p class="last-para">3 Bed | 2 Bath |7,500 sq.ft <i class="fa-solid fa-heart"></i></p>
+
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzb3J0c3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" />
+                <div class="price">
+                    <p>$345,000</p>
+                </div>
+                <h4>Vista Paradiso</h4>
+                <p class="first-para">237 South Punjab,Pakistan</p>
+                <p class="second-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+                    autem illum animi vitae, fugit culpa.We are making Pakistan
+                </p>
+                <p class="last-para">6 Bed | 4 Bath |6,500 sq.ft<i class="fa-solid fa-heart"></i></p>
+
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlc29ydHN8ZW58MHx8MHx8fDA%3D"
+                    alt="" />
+                <div class="price">
+                    <p>$56,000</p>
+                </div>
+                <h4>Lakeview Elegance</h4>
+                <p class="first-para">237 South Punjab,Pakistan</p>
+                <p class="second-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+                    autem illum animi vitae, fugit culpa We are making Pakisatn.
+                </p>
+                <p class="last-para">9 Bed | 2 Bath |8,200 sq.ft <i class="fa-solid fa-heart"></i></p>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var select = document.querySelectorAll(".card i");
+        var flag = 1;
+        console.log(select);
+        select.forEach(function (dets) {
+            dets.addEventListener("click", function () {
+                if (flag === 1) {
+                    dets.style.color = "#ED5AB3";
+                    flag = 0;
+                } else {
+                    dets.style.color = "";
+                    flag = 1;
+                }
+
+            });
+        })
+    </script>
+</body>
+
+</html>
