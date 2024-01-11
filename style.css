@@ -76,7 +76,8 @@ body {
 }
 @media (max-width: 600px) {
   .cards-container {
-    margin-top: 5%;
+    margin-top: 15vh;
+    gap: 15px;
   }
   .card {
     height: 45vh;
